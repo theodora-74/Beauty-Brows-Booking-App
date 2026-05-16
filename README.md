@@ -15,12 +15,6 @@ A native Android booking application designed for home-based beauty salons. Buil
 - **Client Access PIN** — Only clients who know the PIN can access the app
 - **Two Locations** — Thessaloniki and Litochoro
 
-## Screenshots
-
-| Light Mode | Dark Mode |
-|------------|-----------|
-| *(add screenshots here)* | *(add screenshots here)* |
-
 ## Tech Stack
 
 | Component | Technology |
