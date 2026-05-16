@@ -76,7 +76,7 @@ BeautyBooking/
 
 This is proprietary software. See [LICENSE](LICENSE) for details.
 
-© 2026 [YOUR NAME]. All rights reserved.
+© 2026 Theodora Filaj. All rights reserved.
 Create it as README.md in the BeautyBooking/ folder, then:
 git add README.md
 git commit -m "Add README"
