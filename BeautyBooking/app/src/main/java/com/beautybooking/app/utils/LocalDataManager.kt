@@ -13,9 +13,9 @@ object LocalDataManager {
     private const val KEY_ACCESS_CODE = "access_code"
     private const val KEY_CLIENT_AUTH = "client_authenticated"
 
-    private const val ADMIN_USER = "paola"
-    private const val ADMIN_PASS = "6942249535"
-    private const val DEFAULT_ACCESS_CODE = "2025"
+    private const val ADMIN_USER = "admin"
+    private const val ADMIN_PASS = "12345"
+    private const val DEFAULT_ACCESS_CODE = "2026"
 
     fun authenticate(username: String, password: String): Boolean =
         username.trim() == ADMIN_USER && password.trim() == ADMIN_PASS
