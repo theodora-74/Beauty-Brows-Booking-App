@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_manage_days" android:title="@string/manage_working_days" app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_change_pin" android:title="@string/change_access_code" app:showAsAction="never" />
+    <item android:id="@+id/action_toggle_calendar" android:title="@string/calendar_view" app:showAsAction="never" />
+    <item android:id="@+id/action_logout" android:title="@string/logout" app:showAsAction="never" />
+</menu>

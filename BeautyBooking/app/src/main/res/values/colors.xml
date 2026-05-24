@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dusty_rose">#FFD4A0A0</color>
+    <color name="dusty_rose_dark">#FF9B6B6B</color>
+    <color name="dusty_rose_light">#FFEBCECE</color>
+    <color name="dusty_rose_very_light">#FFF7EDED</color>
+    <color name="background_primary">#FFF9F5F5</color>
+    <color name="surface_card">#FFFFFFFF</color>
+    <color name="text_primary">#FF2D2D2D</color>
+    <color name="text_secondary">#FF6B6B6B</color>
+    <color name="text_hint">#FFAAAAAA</color>
+    <color name="border_light">#FFE8D5D5</color>
+    <color name="status_pending">#FFFF9800</color>
+    <color name="status_approved">#FF4CAF50</color>
+    <color name="status_rejected">#FFF44336</color>
+</resources>

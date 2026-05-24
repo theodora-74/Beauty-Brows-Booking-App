@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beauty Excellence</string>
+    <string name="welcome_title">Beauty Excellence</string>
+    <string name="welcome_subtitle">Book your beauty appointment</string>
+    <string name="btn_book_appointment">Book Appointment</string>
+    <string name="btn_cancel_booking">Cancel Booking</string>
+    <string name="btn_admin_panel">Admin Panel</string>
+    <string name="choose_language">Choose Language</string>
+
+    <string name="select_location">Select Location</string>
+    <string name="location_thessaloniki">Thessaloniki</string>
+    <string name="location_litochoro">Litochoro</string>
+
+    <string name="select_service">Choose Your Service</string>
+    <string name="btn_next">Next</string>
+    <string name="service_haircut">Haircut</string>
+    <string name="service_hair_coloring">Hair Coloring</string>
+    <string name="service_lash_lift">Lash Lift</string>
+    <string name="service_brow_lift">Brow Lift</string>
+    <string name="service_lash_extensions">Lash Extensions</string>
+    <string name="service_microblading">Microblading</string>
+    <string name="service_lip_tattoo">Lip Tattoo</string>
+    <string name="service_eyeliner_tattoo">Eyeliner Tattoo</string>
+    <string name="service_brow_clean">Brow Clean</string>
+    <string name="service_nails">Nails</string>
+
+    <string name="nail_options_title">Nail Options</string>
+    <string name="nail_area">Select Area</string>
+    <string name="nail_type">Select Type</string>
+    <string name="nails_hands">Hands</string>
+    <string name="nails_feet">Feet</string>
+    <string name="nails_acrygel">Acrygel</string>
+    <string name="nails_basic_color">Basic Color</string>
+    <string name="nails_cleaning">Cleaning</string>
+    <string name="btn_continue">Continue</string>
+
+    <string name="select_date_time">Select Date &amp; Time</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="select_appointment_date">Select Appointment Date</string>
+    <string name="select_date_first">Select a date to see available times</string>
+    <string name="no_slots_available">No available time slots for this date</string>
+    <string name="not_working_day">This is not a working day</string>
+
+    <string name="your_details">Your Details</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="btn_confirm">Confirm Booking</string>
+    <string name="submitting">Submitting…</string>
+
+    <string name="booking_confirmed">Booking Confirmed!</string>
+    <string name="booking_success_message">Your appointment has been submitted. Save your booking code to cancel if needed.</string>
+    <string name="pending_approval">Pending Approval</string>
+    <string name="btn_back_home">Back to Home</string>
+    <string name="your_booking_code">Your Booking Code</string>
+
+    <string name="cancel_booking_title">Cancel Booking</string>
+    <string name="cancel_booking_hint">Enter the 6-character booking code you received when you booked</string>
+    <string name="booking_code">Booking Code</string>
+    <string name="btn_cancel_appointment">Cancel Appointment</string>
+    <string name="invalid_code">Please enter a valid 6-character code</string>
+    <string name="booking_cancelled_success">Your booking has been cancelled successfully</string>
+    <string name="booking_not_found">No active booking found with this code</string>
+
+    <string name="admin_login_title">Admin Login</string>
+    <string name="email">Username</string>
+    <string name="password">Password</string>
+    <string name="btn_login">Sign In</string>
+    <string name="login_failed">Invalid username or password</string>
+    <string name="admin_dashboard">Dashboard</string>
+    <string name="tab_pending">Pending</string>
+    <string name="tab_approved">Approved</string>
+    <string name="tab_all">All</string>
+    <string name="no_appointments">No appointments found</string>
+    <string name="calendar_view">Calendar View</string>
+    <string name="logout">Logout</string>
+
+    <string name="manage_working_days">Working Days</string>
+    <string name="tap_days_to_toggle">Tap dates to set working hours • Green dot = working day</string>
+    <string name="day_added">Added as working day</string>
+    <string name="day_removed">Removed from working days</string>
+    <string name="working_days_count">%1$s: %2$d working days set</string>
+    <string name="working_days_count_full">%1$s: %2$d manual days + %3$d recurring days</string>
+    <string name="set_working_hours">Set working hours for this day</string>
+    <string name="btn_save">Save</string>
+    <string name="end_after_start">End time must be after start time</string>
+    <string name="day_already_set">This day is already set as working</string>
+    <string name="change_hours">Change Hours</string>
+    <string name="remove_day">Remove Day</string>
+    <string name="recurring_schedule">📅 Weekly Schedule</string>
+    <string name="working_hours_for_recurring">Working hours for selected days:</string>
+    <string name="recurring_days_saved">recurring days saved</string>
+
+    <string name="notify_client">Notify Client</string>
+    <string name="notify_client_question">Send notification to client?</string>
+    <string name="notify_message">Hi %1$s! Your appointment for %2$s on %3$s at %4$s has been %5$s. - Beauty Excellence</string>
+    <string name="skip">Skip</string>
+    <string name="whatsapp_not_available">WhatsApp not available</string>
+    <string name="sms_not_available">Could not open SMS</string>
+
+    <string name="action_approve">Approve</string>
+    <string name="action_reject">Reject</string>
+    <string name="approve_title">Approve Appointment?</string>
+    <string name="reject_title">Reject Appointment?</string>
+    <string name="btn_approve">Approve</string>
+    <string name="btn_reject">Reject</string>
+    <string name="cancel">Cancel</string>
+    <string name="appointment_approved">Appointment approved</string>
+    <string name="appointment_rejected">Appointment rejected</string>
+
+    <string name="status_pending_label">Pending</string>
+    <string name="status_approved_label">Approved</string>
+    <string name="status_rejected_label">Rejected</string>
+    <string name="status_cancelled_label">Cancelled</string>
+
+    <string name="error_required">This field is required</string>
+    <string name="error_invalid_name">Name must be at least 2 characters</string>
+    <string name="error_invalid_phone">Enter a valid phone number</string>
+    <string name="error_invalid_email">Enter a valid email address</string>
+
+    <string name="a11y_back">Go back</string>
+    <string name="a11y_prev_month">Previous month</string>
+    <string name="a11y_next_month">Next month</string>
+    <string name="a11y_language_button">Change language, current: %1$s</string>
+    <string name="a11y_booking_success">Booking confirmed successfully</string>
+    <string name="a11y_service_selected">%1$s selected</string>
+    <string name="a11y_service_not_selected">%1$s not selected</string>
+    <string name="access_code_hint">Enter the code provided by your beautician</string>
+    <string name="access_code_label">PIN Code</string>
+    <string name="btn_enter">Enter</string>
+    <string name="access_code_invalid">Please enter a 4-digit code</string>
+    <string name="access_code_wrong">Incorrect code. Please try again.</string>
+    <string name="change_access_code">Change Client PIN</string>
+    <string name="change_access_code_hint">Set a 4-digit PIN that clients use to access the app. Share this code with your clients.</string>
+    <string name="access_code_changed">PIN changed to</string>
+    <string name="btn_theme">Toggle theme</string>
+</resources>

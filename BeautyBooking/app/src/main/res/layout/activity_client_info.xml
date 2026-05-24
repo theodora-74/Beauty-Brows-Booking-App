@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/background_primary">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="28dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/your_details" android:textSize="24sp"
+                android:textColor="@color/text_primary" android:fontFamily="sans-serif-light"
+                android:letterSpacing="0.02" android:layout_marginBottom="20dp" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp" app:cardBackgroundColor="@color/dusty_rose_very_light"
+                app:cardElevation="0dp" android:layout_marginBottom="28dp" app:strokeWidth="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="18dp">
+                    <TextView android:id="@+id/tvBookingSummaryService" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="16sp" android:textColor="@color/text_primary" android:fontFamily="sans-serif-medium" />
+                    <TextView android:id="@+id/tvBookingSummaryDateTime" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilFullName"
+                style="@style/PastelTextInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" android:hint="@string/full_name">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etFullName"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilPhone"
+                style="@style/PastelTextInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" android:hint="@string/phone_number">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etPhone"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilEmail"
+                style="@style/PastelTextInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" android:hint="@string/email_address">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etEmail"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnConfirm"
+            style="@style/PrimaryButton" android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="@string/btn_confirm" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background_primary" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center" android:padding="36dp">
+        <FrameLayout android:layout_width="72dp" android:layout_height="72dp" android:layout_marginBottom="24dp">
+            <View android:layout_width="72dp" android:layout_height="72dp" android:background="@drawable/bg_status_approved" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center" android:text="✓" android:textSize="32sp" android:textColor="#FF4CAF50" />
+        </FrameLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/booking_confirmed" android:textSize="24sp"
+            android:textColor="@color/text_primary" android:fontFamily="sans-serif-light"
+            android:letterSpacing="0.02" android:layout_marginBottom="6dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/booking_success_message" android:textSize="14sp"
+            android:textColor="@color/text_secondary" android:gravity="center" android:layout_marginBottom="28dp" />
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp" app:cardBackgroundColor="@color/dusty_rose_very_light"
+            app:cardElevation="0dp" app:strokeWidth="0dp" android:layout_marginBottom="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:gravity="center" android:padding="22dp">
+                <TextView android:id="@+id/tvBookingCodeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="12sp" android:textColor="@color/text_secondary"
+                    android:letterSpacing="0.08" android:textAllCaps="true" android:layout_marginBottom="6dp" />
+                <TextView android:id="@+id/tvBookingCode" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="34sp" android:textColor="@color/dusty_rose_dark" android:fontFamily="monospace"
+                    android:letterSpacing="0.3" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp" app:cardBackgroundColor="@color/surface_card" app:cardElevation="0dp"
+            app:strokeWidth="1dp" app:strokeColor="#08000000" android:layout_marginBottom="32dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="22dp">
+                <TextView android:id="@+id/tvConfirmService" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textSize="17sp" android:textColor="@color/text_primary" android:fontFamily="sans-serif-medium" />
+                <TextView android:id="@+id/tvConfirmDateTime" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="4dp" />
+                <TextView android:id="@+id/tvConfirmName" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="8dp" />
+                <TextView android:id="@+id/tvConfirmStatus" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:background="@drawable/bg_status_pending" android:paddingHorizontal="12dp" android:paddingVertical="4dp"
+                    android:textSize="12sp" android:textColor="@color/status_pending" android:layout_marginTop="14dp"
+                    android:fontFamily="sans-serif-medium" android:letterSpacing="0.03" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnBackHome"
+            style="@style/PrimaryButton" android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="@string/btn_back_home" />
+    </LinearLayout>
+</ScrollView>

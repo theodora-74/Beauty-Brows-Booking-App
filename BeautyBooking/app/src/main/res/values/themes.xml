@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BeautyBooking" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/dusty_rose</item>
+        <item name="colorPrimaryDark">@color/dusty_rose_dark</item>
+        <item name="colorAccent">@color/dusty_rose</item>
+        <item name="android:statusBarColor">@color/background_primary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/background_primary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="Theme.BeautyBooking.Splash" parent="Theme.BeautyBooking">
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="PrimaryButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/dusty_rose</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="elevation">0dp</item>
+    </style>
+    <style name="PastelTextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/dusty_rose</item>
+        <item name="hintTextColor">@color/dusty_rose_dark</item>
+        <item name="boxCornerRadiusTopStart">14dp</item>
+        <item name="boxCornerRadiusTopEnd">14dp</item>
+        <item name="boxCornerRadiusBottomStart">14dp</item>
+        <item name="boxCornerRadiusBottomEnd">14dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
+    <style name="ToolbarTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+</resources>

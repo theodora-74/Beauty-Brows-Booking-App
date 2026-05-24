@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:gravity="center"
+    android:padding="12dp" android:layout_margin="5dp"
+    android:background="@drawable/bg_service_card"
+    android:elevation="1dp"
+    android:minHeight="110dp" android:clickable="true" android:focusable="true">
+    <FrameLayout android:layout_width="44dp" android:layout_height="44dp"
+        android:layout_marginBottom="8dp" android:background="@drawable/bg_icon_circle">
+        <ImageView android:id="@+id/ivServiceIcon"
+            android:layout_width="22dp" android:layout_height="22dp"
+            android:layout_gravity="center" android:importantForAccessibility="no" />
+    </FrameLayout>
+    <TextView android:id="@+id/tvServiceName" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="12sp" android:textColor="@color/text_primary" android:gravity="center"
+        android:fontFamily="sans-serif-medium" android:maxLines="2" android:ellipsize="end"
+        android:lineSpacingExtra="2dp" />
+</LinearLayout>

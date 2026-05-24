@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BeautyBooking">
+
+        <activity
+            android:name=".client.AccessCodeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.BeautyBooking.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:exported="false" android:theme="@style/Theme.BeautyBooking.Splash" />
+        <activity android:name=".client.LocationSelectionActivity" android:exported="false" />
+        <activity android:name=".client.ServiceSelectionActivity" android:exported="false" />
+        <activity android:name=".client.NailsOptionsActivity" android:exported="false" />
+        <activity android:name=".client.DateTimeActivity" android:exported="false" />
+        <activity android:name=".client.ClientInfoActivity" android:exported="false" />
+        <activity android:name=".client.BookingConfirmationActivity" android:exported="false" />
+        <activity android:name=".client.CancelBookingActivity" android:exported="false" />
+        <activity android:name=".admin.AdminLoginActivity" android:exported="false" />
+        <activity android:name=".admin.AdminDashboardActivity" android:exported="false" />
+        <activity android:name=".admin.AdminDaysActivity" android:exported="false" />
+
+    </application>
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_splash">
+
+    <!-- Theme toggle - top right corner -->
+    <ImageButton android:id="@+id/btnTheme"
+        android:layout_width="44dp" android:layout_height="44dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="40dp" android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_moon"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="10dp"
+        android:contentDescription="@string/btn_theme"
+        android:scaleType="centerInside" />
+
+    <!-- Main content -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:gravity="center">
+
+        <LinearLayout android:id="@+id/logoArea"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical" android:gravity="center"
+            android:layout_marginBottom="56dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="110dp" android:layout_height="110dp"
+                app:cardCornerRadius="55dp" app:cardElevation="8dp"
+                app:strokeWidth="0dp" android:layout_marginBottom="20dp">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:src="@drawable/logo_brows" android:scaleType="centerCrop"
+                    android:contentDescription="@string/app_name" />
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/welcome_title" android:textSize="30sp"
+                android:textColor="#FFFFFFFF" android:fontFamily="sans-serif-light"
+                android:letterSpacing="0.08" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/welcome_subtitle" android:textSize="14sp"
+                android:textColor="#B0FFFFFF" android:layout_marginTop="6dp"
+                android:letterSpacing="0.04" android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/buttonArea"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:paddingHorizontal="36dp" android:gravity="center">
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnBookAppointment"
+                android:layout_width="match_parent" android:layout_height="56dp"
+                android:text="@string/btn_book_appointment" android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFFFFFF" android:textColor="#FFC8A08A"
+                android:fontFamily="sans-serif-medium" android:letterSpacing="0.03"
+                android:textSize="15sp" app:cornerRadius="28dp" app:elevation="4dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnCancelBooking"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent" android:layout_height="50dp"
+                android:text="@string/btn_cancel_booking" android:textColor="#DDFFFFFF"
+                android:textSize="14sp" android:letterSpacing="0.02"
+                app:strokeColor="#40FFFFFF" app:cornerRadius="25dp"
+                android:layout_marginBottom="20dp" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center">
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnAdminPanel"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content" android:layout_height="44dp"
+                    android:text="@string/btn_admin_panel" android:textColor="#99FFFFFF"
+                    android:textSize="13sp" />
+                <View android:layout_width="1dp" android:layout_height="16dp"
+                    android:background="#30FFFFFF" android:layout_marginHorizontal="8dp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnLanguage"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content" android:layout_height="44dp"
+                    android:text="🌐 EN" android:textColor="#99FFFFFF" android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

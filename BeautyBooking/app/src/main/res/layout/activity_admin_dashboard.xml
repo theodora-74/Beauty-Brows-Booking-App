@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/background_primary">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        app:title="@string/admin_dashboard" app:titleTextColor="@color/text_primary"
+        app:menu="@menu/menu_admin" app:titleTextAppearance="@style/ToolbarTitle" />
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabStatus"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/background_primary"
+        app:tabMode="fixed" app:tabGravity="fill"
+        app:tabIndicatorColor="@color/dusty_rose" app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="@color/dusty_rose_dark" app:tabTextColor="@color/text_hint"
+        app:tabRippleColor="#10D4A0A0">
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_pending" />
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_approved" />
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_all" />
+    </com.google.android.material.tabs.TabLayout>
+    <com.google.android.material.card.MaterialCardView android:id="@+id/cardCalendar"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp" android:layout_marginTop="12dp"
+        app:cardBackgroundColor="@color/surface_card" app:cardCornerRadius="20dp" app:cardElevation="0dp"
+        app:strokeWidth="1dp" app:strokeColor="#08000000" android:visibility="gone">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnPrevMonth"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="44dp" android:layout_height="44dp" android:text="‹" android:textSize="22sp" android:textColor="@color/text_secondary" />
+                <TextView android:id="@+id/tvMonth" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:textSize="16sp" android:textColor="@color/text_primary"
+                    android:fontFamily="sans-serif-medium" android:gravity="center" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnNextMonth"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="44dp" android:layout_height="44dp" android:text="›" android:textSize="22sp" android:textColor="@color/text_secondary" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/llDayHeaders" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="4dp" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCalendar"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvAppointments"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:padding="20dp" android:clipToPadding="false" />
+    <TextView android:id="@+id/emptyState" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:text="@string/no_appointments" android:textSize="15sp" android:textColor="@color/text_hint"
+        android:gravity="center" android:visibility="gone" />
+</LinearLayout>
