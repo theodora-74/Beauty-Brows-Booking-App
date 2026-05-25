@@ -1,5 +1,4 @@
-README.md:
-# Beauty Excellence 💅
+# Beauty Excellence 
 
 A native Android booking application designed for home-based beauty salons. Built with Kotlin and Material Design 3.
 
